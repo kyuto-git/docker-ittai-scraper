@@ -1,0 +1,16 @@
+# Macのシステムファイル
+.DS_Store
+
+# input配下のCSV・退避先フォルダを除外（ただしサンプルは除く）
+input/*.csv
+input/退避先/
+
+# logs配下のログファイルを除外
+logs/*.log
+
+# output配下の年別フォルダ・退避先をすべて除外
+output/20*/
+output/退避先/
+
+# --- 除外の例外（AIに構造を教えるサンプルCSVだけは追跡する） ---
+!input/20260530.csv
